@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+}
+
+td.the_wheel {
+    background: url(../image/wheel_back.png) 50% 50% no-repeat;
+}
+
+.btn-spin{
+    position: absolute;
+    left: 54%;
+    top: 41%;
+    transform: translate(-50%,-38%);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #FF9800;
+    color: white;
+}
+
+/* .result{
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    transform: translate(-50%,-50%);
+}
+ */
+
+.css-flex-table {
+    display: flex;
+    width: 175px;
+}
+    
+.css-flex-table-body {
+    display: flex;
+    flex: 0 0 100%;
+}
+    
+.css-flex-table,
+.css-flex-table-body{
+    flex-wrap: wrap;
+}
+    
+.css-flex-table-body input {
+    flex: 0 1 20px;
+    padding: 0 6px;
+    border: 1px solid #8080808f;
+    box-sizing: border-box;
+} 
+td.selected {
+    background-color: red; 
+    font-weight: bold; 
+    color: #fff;
+}
+
+.button-group {
+  display: block;
+  margin-left: -62px;
+  flex: 0 1 32px;
+}
+.button-group__btn {
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+}
+.button-group__btn input {
+    display: none;
+}
+
+.button-group__label {
+    background-color: #2196F3;
+    color: #fff;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+  /* // Border radius on first element */
+.button-group__btn:first-child .button-group__label {
+    border-radius: 5px 0 0 5px;
+}
+
+  /* // Border radius on last element */
+.button-group__btn:last-child .button-group__label {
+    border-radius: 0 5px 5px 0;
+}
+
+  /* // Styles when selected */
+input:checked + .button-group__label {
+    background-color: #999;
+    color: #fff;
+}
+
+.info-result{
+    position: absolute;
+    top: 9%;
+    left: 74%;
+}
+#result{
+    position: absolute;
+    left: 75%;
+    top: 24%;
+}
+
+#result1 {
+    position: absolute;
+    left: 90%;
+    top: 27%;
+}
+
+.btn-bet, .btn-cancel, .btn-new, .btn-play{
+    padding: 8px;
+    color: white;
+    border: none;
+}
+
+.btn-bet{
+    padding: 8px 30px 8px 30px;
+    background-color: #4CAF50;
+}
+
+.btn-cancel{
+    padding: 8px 20px 8px 20px;
+    background-color: #F44336;
+}
+
+.btn-new{
+    background-color: #FF5722;
+}
+
+.btn-play{
+    background-color: teal;
+}
+
+:disabled{
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.alert{
+    width: 610px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.alert-danger{
+    color: #fff;
+    background-color: #f44336;
+}
+.text-center {
+    text-align: center;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: none;
+}
+.fa {
+    float: right;
+    padding-top: 5px;
+}

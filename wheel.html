@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>HTML5 Canvas Winning Wheel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/wheel.css" type="text/css" />
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/Winwheel.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div align="center" style="margin-left:-163px;">
+            <table>
+                <tr>
+                    <!-- <div class="power_controls">
+                        <button class="btn-spin">Spin</button>
+                    </div> -->
+                    <td>
+                        <div class="css-flex-table" id="table"> 
+                            <div class="css-flex-table-body">                           
+                                <label><input type="checkbox" value="Prize 1" name="style" onchange="disableCheckbox()"> Prize 1</label><br/>                                                   
+                                <label><input type="checkbox" value="Prize 2" name="style" onchange="disableCheckbox()"> Prize 2</label><br/>                                               
+                                <label><input type="checkbox" value="Prize 3" name="style" onchange="disableCheckbox()"> Prize 3</label> <br/>                                                   
+                                <label><input type="checkbox" value="Prize 4" name="style" onchange="disableCheckbox()"> Prize 4</label>  <br/>                                                  
+                                <label><input type="checkbox" value="Prize 5" name="style" onchange="disableCheckbox()"> Prize 5</label> <br/>                                                   
+                                <label><input type="checkbox" value="Prize 6" name="style" onchange="disableCheckbox()"> Prize 6</label><br/>                                                    
+                                <label><input type="checkbox" value="Prize 7" name="style" onchange="disableCheckbox()"> Prize 7</label> <br/>                                                   
+                                <label><input type="checkbox" value="Prize 8" name="style" onchange="disableCheckbox()"> Prize 8</label><br/>
+                            </div>
+                        </div><br/>  
+                        <div class="button-group">
+                            <label class="button-group__btn"><input type="radio" name="check" value="50" /> <span class="button-group__label">50</span></label>
+                            <label class="button-group__btn"><input type="radio" name="check" value="100" /> <span class="button-group__label">100</span></label>
+                            <label class="button-group__btn"><input type="radio" name="check" value="150" /> <span class="button-group__label">150</span></label>
+                            <label class="button-group__btn"><input type="radio" name="check" value="200" /> <span class="button-group__label">200</span></label>
+                            <label class="button-group__btn"><input type="radio" name="check" value="250" /> <span class="button-group__label">250</span></label>
+                        </div><br/>
+                        
+                        <!-- <input type="number" placeholder="Coins" class="final-score"> <br/> -->            
+                        <div style="margin-left:-82px;">
+                            <button class="btn-bet" onclick="betBtn()">Bet</button>
+                            <button class="btn-cancel" onclick="cancelBtn()">Cancel</button>
+                            <button class="btn-play" onclick="playBtn()">Play Again</button>
+                            <button class="btn-new">New Game</button>
+                        </div>
+                        <!-- </div> -->
+                    </td>                    
+                    <td width="438" height="538" class="the_wheel" align="center" valign="center">                       
+                        <canvas id="canvas" width="434" height="434">
+                            <p style="color: white;text-align:center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                        </canvas>
+                        <div class="power_controls">
+                            <button class="btn-spin">Spin</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="info-result"><strong>Your Balance Coin is: </strong><span class="balance_coin"></span></div>
+                        <h3 class="info-result" style="margin-top:40px;"><span class="final-coins"></span></h3>
+                        <h2 class="info-result" style="margin-top:80px;">Your Bet Are Here</h2>
+                        <h5 id="result"></h5><span id="result1"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="alert alert-danger text-center">
+            Game Over! If you want to start from the beginning click on the new game button <i class="fa fa-close"></i>
+        </div>
+        <script src="js/wheelExample.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script> -->
+    </body>
+</html>
